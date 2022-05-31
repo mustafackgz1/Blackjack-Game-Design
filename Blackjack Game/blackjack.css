@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Akshar', sans-serif;
+    text-align: center;
+    background-color:  #085033;
+}
+h1{
+    color: goldenrod;
+    margin: 25px 0;
+    text-transform: up;
+}
+#message-el{
+    margin: 25px 0;
+    font-style: italic;
+}
+p{
+    margin: 25px 0;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.btn{
+    background-color: goldenrod;
+    color: #085033;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+.newCard{
+    margin-top: 10px;
+    color: #000;
+    font-size: 20px;
+}
+input{
+    width: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 15px;
+    text-align: center;
+    border-radius: 20px;
+}
+.bet{
+    font-size: 18px;
+    padding: 6px 12px;
+    font-weight: bold;
+    color: #085033;
+    background-color: goldenrod;
+    border-radius: 20px;
+}
+.bet:hover{
+    background-color: rgba(218, 165, 32, 0.712);
+}
