@@ -58,14 +58,14 @@ function renderGame(){
     if (sum <= 20) {
         message ="Do you want a another card?"
     }
-    else if(sum === 21) { // mutlaka 3 eşittir kullanmalıyız.
+    else if(sum === 21) { //we must use triple equal (===)
         message = "Blackjack!"
-        hasBlackjack = true; // blackjack sonucunun mantıksal gösterimi
+        hasBlackjack = true; // blackjack result's logical output
 
     }
     else{
         message = "Sorry,You lost!"
-        isAlive = false; // kaybetmenin mantıksal gösterimi
+        isAlive = false; //losing's logical output
 
     }
     messageEl.textContent = message
