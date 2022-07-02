@@ -20,10 +20,13 @@ let player = {
 
 function betting(){
     betEl.textContent = "Your Bet: " + document.getElementById("input").value +"$"
+    playerEl.textContent = `Remaining Chips:  ${player.chips - document.getElementById("input").value}$`;
 }
 
 let playerEl = document.getElementById("player-el")
-playerEl.textContent = player.name + ": $" + player.chips
+playerEl.textContent = `${player.name} : ${player.chips}$`
+
+
 
 function getRandomNumber(){
     let randomNumber = Math.floor(Math.random() * 13) + 1
@@ -58,14 +61,14 @@ function renderGame(){
     if (sum <= 20) {
         message ="Do you want a another card?"
     }
-    else if(sum === 21) { //we must use triple equal (===)
+    else if(sum === 21) { // we definitely use triple "="
         message = "Blackjack!"
-        hasBlackjack = true; // blackjack result's logical output
+        hasBlackjack = true; // logic of blackjack result
 
     }
     else{
         message = "Sorry,You lost!"
-        isAlive = false; //losing's logical output
+        isAlive = false; // logic of losing
 
     }
     messageEl.textContent = message
